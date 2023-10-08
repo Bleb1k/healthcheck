@@ -24,6 +24,10 @@ fn main() {
             Ok(data) => println!(
                 "Checking '{}'. Result: {}",
                 url.as_str(),
+                // more informative ("\code \meaning")
+                // format!("{}", data.status())
+
+                // specific to requirements here https://pastebin.com/jmV6BQTA
                 format!(
                     "{}({})",
                     if data.status().is_success() {
